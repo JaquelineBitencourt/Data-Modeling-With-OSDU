@@ -1,0 +1,56 @@
+[
+	{
+		"id": "osdu:work-product-component--TimeSeries:WellheadPressureWell888",
+		"kind": "osdu:wks:work-product-component--TimeSeries:1.1.0",
+		"acl": {
+			"owners": [
+				"{{ _.New_OwnerDataGroup }}@{{ _.domain }}"
+			],
+			"viewers": [
+				"{{ _.New_ViewerDataGroup }}@{{ _.domain }}"
+			]
+		},
+		"legal": {
+			"legaltags": [
+				"{{ _.tagName }}"
+			],
+			"otherRelevantDataCountries": [
+				"NO"
+			],
+			"status": "compliant"
+		},
+		"meta": [],
+		"data": {
+			"Source": "Equinor",
+			"Datasets": [
+				"osdu:dataset--File.Generic:WellheadPressureWell888File:"
+			],
+			"IsExtendedLoad": true,
+			"IsDiscoverable": true,
+			"TechnicalAssurances": [
+				{
+					"TechnicalAssuranceTypeID": "osdu:reference-data--TechnicalAssuranceType:Trusted:",
+					"Reviewers": [
+						{
+							"RoleTypeID": "osdu:reference-data--ContactRoleType:ProjectManager:",
+							"OrganisationID": "osdu:master-data--Organisation:Statoil:",
+							"Name": "Employ 001"
+						}
+					],
+					"EffectiveDate": "2023-06-22"
+				}
+			],
+			"Name": "Wellhead_Pressure_Well888.csv",
+			"Description": "A CSV file that contains wellhead pressure data of the well 888. An extended well test generated these data.",
+			"WellboreID": "osdu:master-data--Wellbore:5351:",			
+			"ExtensionProperties": {
+				"Sensor": "Pressure sensor",
+				"SensorID": "ABC-ABC",
+				"Type": "Wellhead pressure",
+				"UnitOfMeasure": "kgf/cm²",
+				"OriginFile": "1254236_zz"
+			},
+			"SchemaFormatTypeID": "osdu:reference-data--SchemaFormatType:TabSeparatedColumnarText:"
+		}
+	}
+]

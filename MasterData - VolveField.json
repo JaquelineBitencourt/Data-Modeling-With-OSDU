@@ -1,0 +1,48 @@
+[
+	{
+		"id": "osdu:master-data--Field:Volve",
+		"kind": "osdu:wks:master-data--Field:1.0.0",		
+		"acl": {
+			"owners": [
+				"{{ _.New_OwnerDataGroup }}@{{ _.domain }}"
+			],
+			"viewers": [
+				"{{ _.New_ViewerDataGroup }}@{{ _.domain }}"
+			]
+		},
+		"legal": {
+			"legaltags": [
+				"{{ _.tagName }}"
+			],
+			"otherRelevantDataCountries": [
+				"NO"
+			],
+			"status": "compliant"
+		},
+		"meta": [],
+		"data": {
+			"Source": "Libra",
+			"ExistenceKind": "osdu:reference-data--ExistenceKind:Active:",
+			"NameAliases": [
+     			{
+        			"AliasName": "3420717",
+        			"AliasNameTypeID": "osdu:reference-data--AliasNameType:RegulatoryIdentifier:",
+        			"DefinitionOrganisationID": "osdu:master-data--Organisation:NPD:"        			
+      			}
+    		],
+			"GeoContexts": [
+				{
+					"BasinID": "osdu:master-data--Basin:NorwegianBasin",
+					"GeoPoliticalEntityID": "NO",
+					"GeoPoliticalEntityTypeID": "osdu:reference-data--GeoPoliticalEntityType:Region:"
+				}
+			],
+			"TechnicalAssuranceTypeID": "osdu:reference-data--TechnicalAssuranceType:Certified:",
+			"FieldName": "Volve field",
+			"FieldDescription": "Volve is an example of how we searched for every possibility to extend the field life. Now we want to share all Volve data to ensure learning and development of future solutions. ",
+			"EffectiveDate": "2020-02-13T09:13:15.55Z",
+			"TerminationDate": "2020-02-13T09:13:15.55Z",
+			"ExtensionProperties": {}
+		}
+	}
+]
